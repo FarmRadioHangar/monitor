@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  telegraf:
+    build:
+      context: .
+      dockerfile: telegraf.Dockerfile
+    volumes:
+      - ./etc/telegraf.conf:/etc/telegraf/telegraf.conf:ro
+    ports:
+      - "8092:8092/udp"
+      - "8094:8094"
+      - "8125:8125/udp"
