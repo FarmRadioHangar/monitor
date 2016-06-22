@@ -13,6 +13,7 @@ RUN wget -q https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERS
 
 EXPOSE 8125/udp 8092/udp 8094
 
+COPY ./etc/telegraf.conf /etc/telegraf/telegraf.conf
 COPY entry/telegraf.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["telegraf"]
