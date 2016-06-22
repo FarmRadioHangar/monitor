@@ -1,2 +1,2 @@
-# montor
+# monitor
 Docker file for monitoring
