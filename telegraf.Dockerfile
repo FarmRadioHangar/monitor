@@ -1,4 +1,4 @@
-FROM buildpack-deps:trusty-curl
+FROM buildpack-deps:jessie-curl
 
 RUN gpg \
     --keyserver hkp://ha.pool.sks-keyservers.net \
