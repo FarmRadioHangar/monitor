@@ -2,9 +2,9 @@
 Compose stack for metrics collection and visualization
 
 Buuilds images for
-- influxdb
-- telegraf
-- chronograf
+- influxdb `1.0.0-beta2`
+- telegraf  `1.0.0-beta1`
+- chronograf `0.13`
 
 # Usage
  Use docker compose to build
