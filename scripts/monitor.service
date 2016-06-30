@@ -9,4 +9,4 @@ ExecStart=/usr/local/bin/docker-compose -f /monitor/docker-compose.yml up -d
 ExecSop=/usr/local/bin/docker-compose -f /monitor/docker-compose.yml stop
 
 [Install]
-WantedBy=defauly.target
+WantedBy=default.target
