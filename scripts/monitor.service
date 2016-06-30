@@ -1,0 +1,12 @@
+[Unit]
+Description= Monitoring and visualization stack
+Requires=docker.service
+After=docker.service
+
+[Service]
+Restart=always
+ExecStart=/usr/local/bin/docker-compose -f /monitor/docker-compose.yml up -d
+ExecSop=/usr/local/bin/docker-compose -f /monitor/docker-compose.yml stop
+
+[Install]
+WantedBy=defauly.target
